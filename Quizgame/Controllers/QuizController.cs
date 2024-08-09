@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Quizgame.data;
 using Quizgame.Models;
-using Myproject;
 using Microsoft.EntityFrameworkCore;
 
 namespace Quizgame.Controllers
