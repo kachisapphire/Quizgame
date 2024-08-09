@@ -1,0 +1,15 @@
+﻿<h4>For each question,select an Option from A - D</h4>
+	<h6>@Model.Question</h6>
+	<form asp-action="Start" method="post">
+		<input type="hidden" name="QuestionId" value="@ViewBag.QuestionId" />
+		<input type="hidden" name="score" value="@ViewBag.Score" />
+		
+			@foreach (var option in Model.Options)
+			{
+				<div>
+					<input type="radio" name="OptionId" value="@option.Id" required /> @option.Answer
+				</div>
+			}
+		<button type="submit">Submit</button>
+		
+	</form>
